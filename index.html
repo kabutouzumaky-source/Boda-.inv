@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#030303">
+    <title>Nuestra pequeña boda ♛</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="petals-container"></div>
+
+<div class="sparkles-container">
+    <span class="sparkle"></span><span class="sparkle"></span>
+    <span class="sparkle"></span><span class="sparkle"></span>
+    <span class="sparkle"></span><span class="sparkle"></span>
+    <span class="sparkle"></span><span class="sparkle"></span>
+</div>
+
+<div class="golden-glow glow-one"></div>
+<div class="golden-glow glow-two"></div>
+
+<!-- SOBRE DE APERTURA -->
+<section id="envelope-screen" class="envelope-screen">
+    <div class="intro-lights"></div>
+
+    <div class="envelope-wrapper">
+        <div class="envelope">
+            <div class="envelope-inside"></div>
+
+            <div class="letter">
+                <div class="letter-content">
+                    <span>♛</span>
+                    <p>Nuestra pequeña boda</p>
+                </div>
+            </div>
+
+            <div class="envelope-pocket"></div>
+            <div class="envelope-flap"></div>
+
+            <button type="button" id="open-envelope" class="wax-seal">♡</button>
+        </div>
+    </div>
+
+    <p class="open-text">Toca el sello para abrir</p>
+    <p class="tiny-hint">Una historia comienza aquí...</p>
+</section>
+
+<!-- INVITACIÓN -->
+<main id="invitation" class="invitation hidden">
+
+    <!-- INTRODUCCIÓN -->
+    <section class="section hero">
+        <div class="gold-line"></div>
+        <span class="crown">♛</span>
+        <p class="small-title">CON TODO NUESTRO AMOR</p>
+        <h1>Nuestra pequeña boda</h1>
+
+        <div class="ornament">
+            <span>✦</span><i></i><span>♡</span><i></i><span>✦</span>
+        </div>
+
+        <h2 class="names">
+            Evelyn Magali López Albino
+            <span>&</span>
+            Brayan Ivan García Posadas
+        </h2>
+
+        <p class="intro-phrase">
+            Dos corazones, una historia y un día que deseamos compartir contigo.
+        </p>
+    </section>
+
+    <!-- PRIMER MENSAJE -->
+    <section class="section invitation-card">
+        <div class="section-number">I</div>
+        <p class="gold-small">UNA INVITACIÓN ESPECIAL</p>
+
+        <p class="main-text">
+            Hola, ¿qué tal estás?
+            <br><br>
+            Estás cordialmente invitado a nuestra pequeña boda, un momento que queremos compartir de todo corazón con las personas que hacen especial nuestra historia.
+        </p>
+
+        <div class="image-frame">
+            <div class="image-corner top-left"></div>
+            <div class="image-corner top-right"></div>
+            <img src="boda1.jpg" alt="Momento especial">
+            <div class="image-corner bottom-left"></div>
+            <div class="image-corner bottom-right"></div>
+        </div>
+
+        <div class="quote">
+            <span>“</span>
+            El amor convierte un instante en un recuerdo para toda la vida.
+            <span>”</span>
+        </div>
+    </section>
+
+    <!-- SEGUNDO MENSAJE -->
+    <section class="section invitation-card">
+        <div class="section-number">II</div>
+        <p class="gold-small">UN DÍA PARA RECORDAR</p>
+
+        <p class="main-text">
+            Nos llena de alegría poder compartir este día tan importante contigo.
+            <br><br>
+            Tu presencia hará que este momento sea todavía más especial.
+            Queremos celebrar, sonreír, abrazarnos y guardar junto a ustedes recuerdos que permanezcan para siempre.
+            <br><br>
+            Gracias por formar parte de nuestra historia y por acompañarnos en este pequeño pero enorme capítulo de nuestras vidas.
+        </p>
+
+        <div class="image-frame cinematic">
+            <img src="boda2.jpg" alt="Recuerdo de nuestra historia">
+            <div class="image-overlay"></div>
+            <p class="image-caption">Para siempre comienza aquí...</p>
+        </div>
+    </section>
+
+    <!-- FECHA Y CRONÓMETRO -->
+    <section class="date-section section">
+        <div class="date-ornament">✦ ───────── ♡ ───────── ✦</div>
+        <p class="gold-small">RESERVA ESTE MOMENTO</p>
+
+        <h2 class="date">28 NOVIEMBRE</h2>
+        <p class="year">2026</p>
+        <div class="time">5:00 PM</div>
+
+        <div id="countdown" class="countdown">
+            <div class="time-box"><span id="days">00</span><small>DÍAS</small></div>
+            <div class="separator">:</div>
+            <div class="time-box"><span id="hours">00</span><small>HORAS</small></div>
+            <div class="separator">:</div>
+            <div class="time-box"><span id="minutes">00</span><small>MIN</small></div>
+            <div class="separator">:</div>
+            <div class="time-box"><span id="seconds">00</span><small>SEG</small></div>
+        </div>
+    </section>
+
+    <!-- HORARIO DE LA CELEBRACIÓN -->
+    <section class="section schedule-section">
+        <div class="section-number">III</div>
+        <p class="gold-small">UNA TARDE Y UNA NOCHE ESPECIAL</p>
+        <h2 class="schedule-title">Nuestro horario</h2>
+        <p class="schedule-intro">¡Prepárate para disfrutar y celebrar con nosotros! ♡</p>
+
+        <div class="schedule-list">
+            <div class="schedule-item">
+                <span class="schedule-emoji">🍽️</span>
+                <div class="schedule-info">
+                    <strong>5:00 a 6:00 PM</strong>
+                    <span>Comidita</span>
+                </div>
+                <span class="schedule-star">✦</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="schedule-emoji">👨‍⚖️</span>
+                <div class="schedule-info">
+                    <strong>6:00 PM</strong>
+                    <span>Juez</span>
+                </div>
+                <span class="schedule-star">✦</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="schedule-emoji">🥁</span>
+                <div class="schedule-info">
+                    <strong>7:00 a 10:00 PM</strong>
+                    <span>Batucada</span>
+                </div>
+                <span class="schedule-star">✦</span>
+            </div>
+
+            <div class="schedule-item">
+                <span class="schedule-emoji">🎶</span>
+                <div class="schedule-info">
+                    <strong>10:00 PM a 3:00 AM</strong>
+                    <span>Sonido</span>
+                </div>
+                <span class="schedule-star">✦</span>
+            </div>
+        </div>
+
+        <p class="schedule-footer">✨ ¡Que no falte la alegría ni el baile! ✨</p>
+    </section>
+
+    <!-- ASISTENCIA DE FAMILIA -->
+    <section class="section attendance-section">
+        <div class="section-number">IV</div>
+        <p class="gold-small">NOS ENCANTARÁ CONTAR CONTIGO</p>
+        <h2 class="attendance-title">Asistencia de familia</h2>
+
+        <p class="attendance-description">
+            Cada vez que presiones el botón se sumará una persona al contador de invitados.
+        </p>
+
+        <div class="attendance-counter">
+            <span id="guest-count">0</span>
+            <small>INVITADOS REGISTRADOS</small>
+        </div>
+
+        <button type="button" id="add-guest" class="attendance-button">
+            ♡ Confirmar asistencia
+        </button>
+
+        <p id="attendance-message" class="attendance-message">
+            ¡Gracias por acompañarnos! ♡
+        </p>
+    </section>
+
+    <!-- MENSAJE DE CIERRE -->
+    <section class="section invitation-card">
+        <div class="section-number">V</div>
+        <p class="gold-small">CON TODO NUESTRO CORAZÓN</p>
+
+        <p class="main-text">
+            Esperamos contar con tu asistencia para compartir sonrisas, abrazos, buenos deseos y cada pequeño instante de este día tan especial.
+            <br><br>
+            Será una alegría mirarte entre nuestros invitados y saber que estás ahí para celebrar con nosotros.
+            <br><br>
+            Porque algunos momentos se vuelven inolvidables simplemente porque las personas que amamos estuvieron presentes.
+        </p>
+
+        <div class="image-frame">
+            <img src="boda3.jpg" alt="Celebración de nuestra boda">
+        </div>
+
+        <p class="closing-invitation">
+            Esperamos con mucha ilusión tu asistencia. ♡
+        </p>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="location-section section">
+        <div class="location-icon">⌖</div>
+        <p class="gold-small">EL LUGAR</p>
+        <h2>Acompáñanos</h2>
+
+        <p>Te esperamos para compartir este día tan especial.</p>
+
+        <a class="location-button"
+           href="https://goo.gl/maps/TsQBXiGAr7QAonxP6"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span>⌖</span> VER UBICACIÓN
+        </a>
+    </section>
+
+    <!-- MENSAJE FINAL -->
+    <section class="final-section section">
+        <div class="final-stars">✦ <span>♡</span> ✦</div>
+        <p class="gold-small">NUESTRO ÚLTIMO DESEO</p>
+
+        <p class="final-text">
+            Que Dios bendiga nuestro camino, nuestro amor y cada paso que demos juntos a partir de este día.
+            <br><br>
+            Que nunca falten la fe, la esperanza, el respeto y el amor en nuestro hogar.
+            <br><br>
+            Y que este nuevo comienzo esté siempre acompañado por Su luz y Sus bendiciones.
+        </p>
+
+        <div class="image-frame final-image">
+            <img src="boda4.jpg" alt="Nuestro día especial">
+        </div>
+
+        <div class="final-names">
+            <span>Evelyn</span><small>&</small><span>Brayan</span>
+        </div>
+
+        <div class="final-ornament">✦ ─── ♡ ─── ✦</div>
+        <p class="final-date">28 · 11 · 2026</p>
+    </section>
+
+    <!-- MÚSICA -->
+    <audio id="wedding-music" src="lol.mp3" loop></audio>
+
+    <button id="music-button" class="music-button" type="button">♫</button>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
